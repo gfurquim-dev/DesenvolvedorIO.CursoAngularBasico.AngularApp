@@ -5,7 +5,12 @@
   "projects": {
     "DesenvolvedorIO.CursoAngularBasico.AngularApp": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "skipTests": true,
+          "inlineStyle": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -91,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e6bc574d-adbd-4a69-8931-a0e7397f955b"
   }
 }
