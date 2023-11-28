@@ -1,13 +1,22 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from './navegacao/footer/footer.component';
+import { HomeComponent } from './navegacao/home/home.component';
+import { MenuComponent } from './navegacao/menu/menu.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    MenuComponent,
+    HomeComponent,
+    FooterComponent
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styles: ``
 })
 export class AppComponent {
   title = 'DesenvolvedorIO.CursoAngularBasico.AngularApp';
