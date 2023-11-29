@@ -1,0 +1,38 @@
+<div class="container main-container">
+  <h3>Interpolation</h3>
+  <p [ngClass]="{
+    'text-secondary': counter < 3,
+    'text-success': counter >= 3,
+    'text-warning': counter >= 5,
+    'text-danger': counter >= 9,
+  }">Counter: {{counter}}</p>
+  <br>
+  <br>
+  <h3>Property biding</h3>
+  <button class="btn btn-info" [disabled]="counter >= 10">Info</button>
+  <br>
+  <br>
+  <img [src]="imageUrl" alt="" height="50px" width="200px">
+  <br>
+  <br>
+  <h3>Event Biding</h3>
+  <button class="btn btn-warning" (click)="addClick()">Add</button>
+  <button class="btn btn-danger" (click)="resetCounter()" [disabled]="counter < 10"> Reset</button>
+  <br>
+  <br>
+  <h3>Two-way data biding</h3>
+  <!-- <input type="text" (keyup)="keyUp($event)" placeholder="Type your name">
+  <br>
+  <br>
+  <label> Your name is: {{name}}</label> -->
+
+  <!-- <input type="text" [ngModel]="name" (ngModelChange)="name = $event" placeholder="Type your name">
+  <br>
+  <br>
+  <label>Your name is: {{name}}</label> -->
+
+  <input type="text" [(ngModel)]="name" placeholder="Type your name">
+  <br>
+  <br>
+  <label>Your name is: {{name}}</label>
+</div>
