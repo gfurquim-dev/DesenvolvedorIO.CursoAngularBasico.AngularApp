@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   standalone: true,
-  selector: 'app-sobre',
-  templateUrl: './sobre.component.html',
+  selector: 'app-about',
+  templateUrl: './about.component.html',
   styles: []
 })
-export class SobreComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   constructor() { }
 

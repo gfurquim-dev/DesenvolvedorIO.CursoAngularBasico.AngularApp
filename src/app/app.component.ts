@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FooterComponent } from './navegacao/footer/footer.component';
-import { MenuComponent } from './navegacao/menu/menu.component';
+import { FooterComponent } from './navigation/footer/footer.component';
+import { MenuComponent } from './navigation/menu/menu.component';
 
 @Component({
   selector: 'app-root',
